@@ -1,4 +1,4 @@
-# OST X GraphQL
+# OST • GraphQL Server
 Looking to get started using the OST APIs really quickly?  This is a small turn-key project that sets up a Node/Express development server running Apollo GraphQL.
 
 ```Bash
