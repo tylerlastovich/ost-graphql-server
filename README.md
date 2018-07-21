@@ -15,8 +15,8 @@ npm start
 ```
 
 ## API Keys
-Get OST Kit API keys from https://kit.ost.com/developer-api-console
-Get an Apollo Engine service key from https://engine.apollographql.com 
+ - Get OST Kit API keys from https://kit.ost.com/developer-api-console
+ - Get an Apollo Engine service key from https://engine.apollographql.com 
 
 ### Dependencies
  - Node v8
