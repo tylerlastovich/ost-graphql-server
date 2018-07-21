@@ -13,8 +13,7 @@
     "express": "^4.16.2",
     "graphql": "^0.11.7",
     "graphql-tools": "^2.13.0",
-    "lodash": "^4.17.5",
-    "node-fetch": "^1.7.3"
+    "lodash": "^4.17.5"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -34,7 +33,7 @@
     "url": "git+h"
   },
   "author": "Tyler Lastovich",
-  "license": "MIT License",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Lastly/ost-graphql-server/issues"
   },
