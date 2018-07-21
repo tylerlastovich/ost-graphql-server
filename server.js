@@ -42,5 +42,5 @@ engine.listen({
         startupTimeout: 3000,
     },
 }, () => {
-    `GraphiQL is now running on http://localhost:${GRAPHQL_PORT}/graphiql`
+    console.log("GraphiQL is now available at http://localhost:" + GRAPHQL_PORT + "/graphiql");
 });
