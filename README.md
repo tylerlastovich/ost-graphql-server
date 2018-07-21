@@ -8,8 +8,8 @@ Using [OST](https://ost.com) branded tokens you can set up a token economy insid
 ## Installation and Use
 ```Bash
 cd ost-graphql-server
-npm install
 vi logic/conf.js # add your OST API keys and Apollo service ID
+npm install
 npm start
 # Server should be running on localhost:<GRAPHQL_PORT>/graphiql!
 ```
