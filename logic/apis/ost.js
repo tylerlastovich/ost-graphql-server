@@ -249,7 +249,7 @@ const OstResolver = {
                     console.log(user);
                     return user;
                 }).catch((e) => {
-                    console.log("There was an error creating OST user")
+                    console.log("There was an error creating OST user");
                     console.log("Err", e.err);
                     return e;
                 });
@@ -262,7 +262,7 @@ const OstResolver = {
                     console.log(user);
                     return user;
                 }).catch((e) => {
-                    console.log("There was an error updating OST user: " + args.id)
+                    console.log("There was an error updating OST user: " + args.id);
                     console.log("Err", e.err);
                     return e;
                 });
@@ -278,7 +278,7 @@ const OstResolver = {
                     console.log(user);
                     return user;
                 }).catch((e) => {
-                    console.log("There was an error executing OST airdrop)
+                    console.log("There was an error executing OST airdrop");
                     console.log("Err", e.err);
                     return e;
                 });
@@ -319,7 +319,7 @@ const OstResolver = {
                 console.log(action);
                 return action;
             }).catch((e) => {
-                console.log("There was an error updating OST action: " + args.id)
+                console.log("There was an error updating OST action: " + args.id);
                 console.log("Err", e.err);
                 return e;
             });
