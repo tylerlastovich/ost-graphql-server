@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My first Vue app</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/apollo-client-browser@1.9.0"></script>
+    <script src="https://unpkg.com/vue-apollo@2.1.0-beta.19"></script>
+</head>
+
+<body>
+<!-- App -->
+<div id="app">
+    <h1>Users</h1>
+    <div>
+        <div v-if="loading" class="loading">Loading...</div>
+        <div>{{users}}</div>
+        <article v-for="user in listOstUsers.users">
+            <div class="title">{{ user.name }}</div>
+            <div class="author">By {{ user.id }}</div>
+        </article>
+    </div>
+</div>
+
+<script>
+    const apolloClient = new Apollo.lib.ApolloClient({
+        networkInterface: Apollo.lib.createNetworkInterface({
+            // Edit: https://launchpad.graphql.com/nnnwvmq07
+            uri: 'http://localhost:3000/graphql',
+            transportBatching: true,
+        }),
+        connectToDevTools: true,
+    })
+
+    const apolloProvider = new VueApollo.ApolloProvider({
+        defaultClient: apolloClient,
+    })
+
+    const USERS_QUERY = Apollo.gql`
+         {
+          listOstUsers{
+            users {
+              name
+              token_balance
+              id
+            }
+          }
+        }
+        `;
+
+    // New VueJS instance
+    const app = new Vue({
+        el: '#app',
+        data: {
+            listOstUsers: [''],
+            loading: 0,
+        },
+        // Apollo GraphQL
+        apolloProvider,
+        apollo: {
+            listOstUsers: {
+                query: USERS_QUERY,
+                loadingKey: 'loading',
+            },
+        },
+    })
+
+
+</script>
+</body>
+</html>

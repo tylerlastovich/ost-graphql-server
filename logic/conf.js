@@ -7,7 +7,7 @@ const APOLLO_ENGINE_KEY = '';
 // OST API Keys (obtain from https://kit.ost.com/developer-api-console)
 const OST_API_KEY = '';
 const OST_API_SECRET_KEY = '';
-const OST_API_ENDPOINT = '';
+const OST_API_ENDPOINT = 'https://sandboxapi.ost.com/v1.1';
 
 export {
     GRAPHQL_PORT,
