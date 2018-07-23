@@ -25,5 +25,5 @@ npm start
 ### About
 Visit [OST.com](https://ost.com) to learn more about OST. 
 
-Made possible with supported from [FUTURED](https://futured.org)
+Made possible with support from [FUTURED](https://futured.org)
 ![FUTURED Logo](https://i.imgur.com/hvhyCFY.jpg)
