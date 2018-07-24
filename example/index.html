@@ -25,7 +25,7 @@
 <script>
     const apolloClient = new Apollo.lib.ApolloClient({
         networkInterface: Apollo.lib.createNetworkInterface({
-            // Edit: https://launchpad.graphql.com/nnnwvmq07
+            // ADD YOUR GRAPHQL ENDPOINT HERE !!! ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             uri: 'http://localhost:3000/graphql',
             transportBatching: true,
         }),
@@ -55,7 +55,7 @@
             listOstUsers: [''],
             loading: 0,
         },
-        // Apollo GraphQL
+        // Apollo GraphQL (queries go here)
         apolloProvider,
         apollo: {
             listOstUsers: {
