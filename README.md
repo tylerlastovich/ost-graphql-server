@@ -16,6 +16,9 @@ npm start
 # Server should be running on localhost:<GRAPHQL_PORT>/graphiql!
 ```
 
+This server comes with the basic OST APIs, but that is not where the fun stuff happens.  This project is set up so you can add your own API functions (resolvers) and types quickly. [```logic/type-defs.js```](https://github.com/Lastly/ost-graphql-server/blob/master/logic/type-defs.js) contains the type definitions for graphql, where the query and mutation types match the functions found in ```logic/resolvers.js```.  Take a look at [```logic/apis/ost.js```](https://github.com/Lastly/ost-graphql-server/blob/master/logic/apis/ost.js) to get an example of what a sample resolver looks like. Make your own file, add it to ```logic/resolvers.js```, and then add the matching types to ```logic/type-defs.js```.  Now you have an API -- Easy!
+
+
 ## API Keys
  - Get OST Kit API keys from https://kit.ost.com/developer-api-console
  - Get an Apollo Engine service key from https://engine.apollographql.com 
