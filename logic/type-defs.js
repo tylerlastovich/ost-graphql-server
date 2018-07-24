@@ -8,7 +8,7 @@ type OSTUsers {
 type OSTUser {
     name: String
     id: String
-    addresses: [ String ]
+    addresses: [[ String ]]
     airdropped_tokens: Float
     token_balance: Float
     err: Err
