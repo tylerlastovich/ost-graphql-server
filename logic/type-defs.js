@@ -78,8 +78,8 @@ type OSTToken {
     token_erc20_address: String
     simple_stake_contract_address: String
     total_supply: Float
-    ost_utility_balance: [ Float ]
-    price_points: String
+    ost_utility_balance: [[ Float ]]
+    price_points: OstPricePoint
     err: Err 
 }
 
@@ -123,6 +123,15 @@ type Err {
     msg: String
     error_data: [ String ]
     internal_id: String
+}
+
+type OstPricePoint {
+    OST: UsdPrice
+    BT: UsdPrice
+}
+
+type UsdPrice {
+    USD: Float
 }
     
 type Query {
