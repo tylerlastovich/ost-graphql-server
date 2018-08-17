@@ -7,6 +7,8 @@ By using [OST](https://ost.com) branded tokens you can set up a token economy in
 
 GraphQL allows for your front end service to ask for exactly what information it wants, and get a clean response. Apollo has written some very nice documentation on how to use GraphQL from React, Vue, Angular, plain JS, etc.  [Give it a look](https://www.apollographql.com/docs/react/) when you are ready to learn more.  
 
+![Apollo explainer](https://www.apollographql.com/docs/engine/img/engine-architecture.png)
+
 ## Installation and Use
 ```Bash
 cd ost-graphql-server
